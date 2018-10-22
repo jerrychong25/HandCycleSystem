@@ -6,7 +6,7 @@ This is a website developed for project name "[Development of low cost upper and
 
 ## Deployment
 
-Hosted previously on [Byet Internet Services](http://mysight4rehab.byethost9.com/) and now preview on https://mysight4rehab.netlify.com/.
+Hosted previously on [Byet Internet Services](http://mysight4rehab.byethost9.com/) and presently hosted on https://mysight4rehab.netlify.com/.
 
 ## Built With
 
