@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-This is a rehabilitation system designed for project name "[Development of low cost upper and lower extremities rehabilitation system with interactive feedback for children with movement disorders](https://ieeexplore.ieee.org/document/7843556)", which assists children on doing exercise for upper and lower extremities.
+This is a rehabilitation system designed for project name "[Development of low cost upper and lower extremities rehabilitation system with interactive feedback for children with movement disorders](https://ieeexplore.ieee.org/document/7843556)", which assists children doing exercises for upper and lower extremities.
 
 ## Deployment
 
