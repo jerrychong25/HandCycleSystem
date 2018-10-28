@@ -10,7 +10,7 @@ Tested on Arduino board.
 
 ## Built With
 
-* [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+* [Arduino IDE 1.6.8](https://www.arduino.cc/en/Main/Software)
 
 ## Versioning
 
