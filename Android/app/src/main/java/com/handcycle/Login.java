@@ -2,6 +2,8 @@ package com.handcycle;
 
 // Import Android API
 import android.content.Intent;
+import android.os.Build;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -44,6 +46,11 @@ public class Login extends AppCompatActivity {
 
         final Button LoginButton = (Button) findViewById(R.id.LoginButton);
 
+        // Modify Status Bar Colour
+        if (Build.VERSION.SDK_INT >= 21) {
+            getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.colorPrimaryDark)); //status bar or the time bar at the top
+        }
+
         // Initialize Firebase Auth and Database Reference
         mAuth = FirebaseAuth.getInstance();
 
@@ -54,7 +61,7 @@ public class Login extends AppCompatActivity {
                 if (user != null) {
                     // User is signed in
 //                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-                    Toast.makeText(Login.this,"User have signed in!",Toast.LENGTH_LONG).show();
+//                    Toast.makeText(Login.this,"User have signed in!",Toast.LENGTH_LONG).show();
                 } else {
                     // User is signed out
 //                    Log.d(TAG, "onAuthStateChanged:signed_out");
