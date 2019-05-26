@@ -9,7 +9,13 @@ This is a rehabilitation system designed for project name "[Development of low c
 Tested on Android 4.X tablet and Arduino board.<br>
 
 A prototype is built for demonstration purpose, as per screenshot below:<br>
-Picture is temporarily not available
+<p align="center">
+  <img src="Tablet7ScreenShot1.png" alt="Hand Cycle Screenshot Login"
+       width="300" height="533"><br>
+  <img src="Tablet7ScreenShot5.png" alt="Hand Cycle Screenshot Menu"
+       width="533" height="300"><br>
+  <img src="OverallScreenshot.png" alt="Prototype">
+</p>
 
 ## Built With
 
