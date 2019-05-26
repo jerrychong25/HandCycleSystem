@@ -6,7 +6,10 @@ This is a rehabilitation system designed for project name "[Development of low c
 
 ## Deployment
 
-Tested on Android 4.X tablet and Arduino board.
+Tested on Android 4.X tablet and Arduino board.<br>
+
+A prototype is built for demonstration purpose, as per screenshot below:<br>
+Picture is temporarily not available
 
 ## Built With
 
@@ -20,7 +23,7 @@ Tested on Android 4.X tablet and Arduino board.
 
 ## Authors
 
-**Jerry Chong** - [jerrychong25](https://github.com/jerrychong25)<br>
+**Chong Hon Fong** - [jerrychong25](https://github.com/jerrychong25)<br>
 **Heng Yeh Tat**<br>
 **Ng Peng Yee**<br>
 **Marshall Loi**<br>
