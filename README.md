@@ -29,7 +29,7 @@ A prototype is built for demonstration purpose, as per screenshot below:<br>
 
 ## Authors
 
-**Chong Hon Fong** - [jerrychong25](https://github.com/jerrychong25)<br>
+**Jerry Chong** - [jerrychong25](https://github.com/jerrychong25)<br>
 **Heng Yeh Tat**<br>
 **Ng Peng Yee**<br>
 **Marshall Loi**<br>
