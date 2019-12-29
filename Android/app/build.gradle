@@ -37,20 +37,13 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
 
-    // Old Firebase Version
-//    implementation 'com.google.firebase:firebase-core:16.0.3'              // Firebase Analytics
-//    implementation 'com.google.firebase:firebase-database:16.0.1'          // Firebase Realtime Database
-//    implementation 'com.google.firebase:firebase-storage:16.0.1'           // Firebase Storage
-//    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'         // Firebase Crashlytics
-//    implementation 'com.google.firebase:firebase-auth:16.0.3'              // Firebase Authentication
-//    implementation 'com.google.firebase:firebase-messaging:17.3.0'         // Firebase Cloud Messaging and Notifications
-    // New Firebase Version
-    implementation 'com.google.firebase:firebase-analytics:17.2.0'          // Firebase Analytics
+    // Firebase
+    implementation 'com.google.firebase:firebase-analytics:17.2.1'          // Firebase Analytics
     implementation 'com.google.firebase:firebase-database:19.2.0'           // Firebase Realtime Database
     implementation 'com.google.firebase:firebase-storage:19.1.0'            // Firebase Storage
     implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'         // Firebase Crashlytics
     implementation 'com.google.firebase:firebase-auth:19.2.0'               // Firebase Authentication
-    implementation 'com.google.firebase:firebase-messaging:20.1.0'        // Firebase Cloud Messaging and Notifications
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'          // Firebase Cloud Messaging and Notifications
 }
 
 apply plugin: 'com.google.gms.google-services'
