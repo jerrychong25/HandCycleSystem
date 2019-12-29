@@ -63,14 +63,11 @@ public class Login extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
-//                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
-//                    Toast.makeText(Login.this,"User have signed in!",Toast.LENGTH_LONG).show();
+//                    Toast.makeText(Login.this, "User have signed in", Toast.LENGTH_LONG).show();
                 } else {
                     // User is signed out
-//                    Log.d(TAG, "onAuthStateChanged:signed_out");
-                    Toast.makeText(Login.this,"User have signed out!",Toast.LENGTH_LONG).show();
+//                    Toast.makeText(Login.this, "User have signed out", Toast.LENGTH_LONG).show();
                 }
-                // ...
             }
         };
 
@@ -81,21 +78,16 @@ public class Login extends AppCompatActivity {
                 String Password = PasswordText.getText().toString();
 
                 if (TextUtils.isEmpty(Email)) {
-                    EmailText.setError("Please Enter Your Email!");
+                    EmailText.setError("Please enter your email");
+                    Toast.makeText(Login.this, "Please enter your email", Toast.LENGTH_LONG).show();
                     return;
                 }
-
                 else if (TextUtils.isEmpty(Password)) {
-                    PasswordText.setError("Please Enter Your Password!");
+                    PasswordText.setError("Please enter your password");
+                    Toast.makeText(Login.this, "Please enter your password", Toast.LENGTH_LONG).show();
                     return;
                 }
-//
                 else {
-//                    Toast.makeText(Login.this, "Wrong Username or Password, Please Try Again!", Toast.LENGTH_SHORT).show();
-//                    EmailText.getText().clear();
-//                    PasswordText.getText().clear();
-//                    return;
-
                     mAuth.signInWithEmailAndPassword(Email, Password)
                             .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
                                 @Override
@@ -107,7 +99,7 @@ public class Login extends AppCompatActivity {
                                     // signed in user can be handled in the listener.
                                     if(task.isSuccessful()){
                                         //display some message here
-                                        Toast.makeText(Login.this,"Login Success!",Toast.LENGTH_LONG).show();
+                                        Toast.makeText(Login.this, "Login success", Toast.LENGTH_LONG).show();
 
                                         EmailText.getText().clear();
                                         PasswordText.getText().clear();
@@ -117,9 +109,7 @@ public class Login extends AppCompatActivity {
                                     }
                                     else{
 //                                       Log.w(TAG, "signInWithEmail:failed", task.getException());
-//                                       Toast.makeText(Login.this, R.string.auth_failed,
-//                                                Toast.LENGTH_SHORT).show();
-                                        Toast.makeText(Login.this,"Authentication Failed!",Toast.LENGTH_LONG).show();
+                                        Toast.makeText(Login.this, "Login failed", Toast.LENGTH_LONG).show();
                                     }
                                     // ...
                                 }
