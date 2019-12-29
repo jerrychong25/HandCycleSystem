@@ -23,7 +23,7 @@ Picture is temporarily not available
 
 ## Authors
 
-**Chong Hon Fong** - [jerrychong25](https://github.com/jerrychong25)<br>
+**Jerry Chong** - [jerrychong25](https://github.com/jerrychong25)<br>
 **Heng Yeh Tat**<br>
 **Ng Peng Yee**<br>
 **Marshall Loi**<br>
