@@ -51,7 +51,7 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
 
     // Youtube
     public static final String api_key = "AIzaSyCnAQhYgNJr64s2IvVrLGX72pClRN7smF0";
-    public static final String video_id = "2KfvxE7iQO8";           // Doraemon
+    public static final String video_id = "MNACIZghnjA";           // Doraemon
 
     BluetoothFunction bluetoothFunction = new BluetoothFunction();
 
