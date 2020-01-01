@@ -6,7 +6,7 @@ This is a rehabilitation system designed for project name "[Development of low c
 
 ## Deployment
 
-Tested on Android 4.X tablet and Arduino board.<br>
+Tested on Android 4.4-9.0 tablets and Arduino board.<br>
 
 A prototype is built for demonstration purpose, as per screenshot below:<br>
 Picture is temporarily not available
@@ -15,6 +15,7 @@ Picture is temporarily not available
 
 [Android Studio 2.1.2](https://developer.android.com/studio/) (1.0.1 - 1.0.3_MS)<br>
 [Android Studio 3.1.3](https://developer.android.com/studio/) (1.0.4)<br>
+[Android Studio 3.1.4](https://developer.android.com/studio/) (1.0.5 - Present)<br>
 [Arduino IDE 1.6.8](https://www.arduino.cc/en/Main/Software)
 
 ## Versioning
