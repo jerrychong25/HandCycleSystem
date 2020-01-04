@@ -3,7 +3,6 @@ package com.handcycle;
 // Import Android API
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothSocket;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
@@ -28,10 +27,8 @@ import com.google.android.youtube.player.YouTubePlayerView;
 import com.google.firebase.database.ValueEventListener;
 
 // Import Java API
-import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.UUID;
 
 /**
  * Created by user on 14/8/2016.
@@ -64,8 +61,11 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
         DatabaseRehabilitationDetails = FirebaseDatabase.getInstance().getReference();
 
         // Button
-        final Button bSystemStart = (Button) findViewById(R.id.bSystemStart);
-        final Button bSystemStop = (Button) findViewById(R.id.bSystemStop);
+        final Button buttonStart = (Button) findViewById(R.id.buttonStart);
+        final Button buttonStop = (Button) findViewById(R.id.buttonStop);
+
+        // Hide Stop Button Until System Is Start
+        buttonStop.setVisibility(View.GONE);
 
         YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.player);
         youTubePlayerView.initialize(api_key, this);
@@ -115,12 +115,12 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
             };
         };
 
-        bSystemStart.setOnClickListener(new View.OnClickListener() {
+        buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
                 if (mBluetoothAdapter == null) {
-                    // Device does not support Bluetoothv
+                    // Device does not support Bluetooth
                     Toast.makeText(Display.this, "Bluetooth not supported on this device!", Toast.LENGTH_LONG).show();
                 } else if (!mBluetoothAdapter.isEnabled()) {
                     // Bluetooth is not enabled :)
@@ -128,14 +128,20 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
                 } else {
                     // Bluetooth is enabled
                     Toast.makeText(Display.this, "Bluetooth is enabled on this device!", Toast.LENGTH_LONG).show();
+                    buttonStart.setVisibility(View.GONE);
+                    buttonStop.setVisibility(View.VISIBLE);
                     Alert_StructureOrientation();
                 }
             }
         });
 
-        bSystemStop.setOnClickListener(new View.OnClickListener() {
+        buttonStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                buttonStop.setVisibility(View.GONE);
+                buttonStart.setVisibility(View.VISIBLE);
+
                 motor1_speed = 0;
                 motor1_duration = 0;
                 structure_orientation = 0;
