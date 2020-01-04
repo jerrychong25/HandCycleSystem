@@ -2,6 +2,7 @@ package com.handcycle;
 
 // Import Android API
 import android.app.AlertDialog;
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothSocket;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -117,7 +118,18 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
         bSystemStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Alert_StructureOrientation();
+                BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+                if (mBluetoothAdapter == null) {
+                    // Device does not support Bluetoothv
+                    Toast.makeText(Display.this, "Bluetooth not supported on this device!", Toast.LENGTH_LONG).show();
+                } else if (!mBluetoothAdapter.isEnabled()) {
+                    // Bluetooth is not enabled :)
+                    Toast.makeText(Display.this, "Bluetooth not enabled on this device!", Toast.LENGTH_LONG).show();
+                } else {
+                    // Bluetooth is enabled
+                    Toast.makeText(Display.this, "Bluetooth is enabled on this device!", Toast.LENGTH_LONG).show();
+                    Alert_StructureOrientation();
+                }
             }
         });
 
