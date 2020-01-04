@@ -128,7 +128,9 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
                 } else {
                     // Bluetooth is enabled
                     Toast.makeText(Display.this, "Bluetooth is enabled on this device!", Toast.LENGTH_LONG).show();
+                    // Hide Start Button
                     buttonStart.setVisibility(View.GONE);
+                    // Show Stop Button
                     buttonStop.setVisibility(View.VISIBLE);
                     Alert_StructureOrientation();
                 }
@@ -138,8 +140,9 @@ public class Display extends YouTubeBaseActivity implements YouTubePlayer.OnInit
         buttonStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                // Hide Stop Button
                 buttonStop.setVisibility(View.GONE);
+                // Show Start Button
                 buttonStart.setVisibility(View.VISIBLE);
 
                 motor1_speed = 0;

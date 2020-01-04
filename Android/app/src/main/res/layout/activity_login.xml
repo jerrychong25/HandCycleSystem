@@ -41,13 +41,20 @@
 
     <Button
         android:id="@+id/LoginButton"
-        android:backgroundTint="#77D373"
+        android:background="@drawable/transparent_bg_bordered_button"
         android:layout_width='200dp'
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
         android:textSize="20dp"
-        android:textColor="#000000"
+        android:textColor="#77D373"
         android:text="Login"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/LoginButton"-->
+        <!--android:layout_width="240dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sign In"-->
+        <!--android:background="@drawable/btn_rounded" />-->
 
 </LinearLayout>
