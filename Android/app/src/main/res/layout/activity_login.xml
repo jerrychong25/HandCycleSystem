@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="30dp"
     android:layout_width="match_parent"
     android:weightSum="30">
 
@@ -41,13 +41,13 @@
 
     <Button
         android:id="@+id/LoginButton"
-        android:text="Login"
-        android:layout_marginBottom="20dp"
+        android:backgroundTint="#77D373"
         android:layout_width='200dp'
         android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
         android:layout_weight="1"
         android:textSize="20dp"
         android:textColor="#000000"
-        android:layout_gravity="center_horizontal"/>
+        android:text="Login"/>
 
 </LinearLayout>
