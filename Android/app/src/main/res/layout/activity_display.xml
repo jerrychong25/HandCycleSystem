@@ -11,7 +11,7 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Welcome to Hand Cycle System!"
+            android:text="Hand Cycle System"
             android:textSize="25pt"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
