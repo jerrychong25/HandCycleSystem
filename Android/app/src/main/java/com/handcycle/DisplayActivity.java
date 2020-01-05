@@ -55,6 +55,9 @@ public class DisplayActivity extends YouTubeBaseActivity implements YouTubePlaye
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Log.d("DisplayActivity", "Display Screen Start");
+
         setContentView(R.layout.activity_display);
 
         DatabaseRehabilitationDetails = FirebaseDatabase.getInstance().getReference();
@@ -76,7 +79,7 @@ public class DisplayActivity extends YouTubeBaseActivity implements YouTubePlaye
             public void onDataChange(DataSnapshot dataSnapshot) {
                 for(DataSnapshot child: dataSnapshot.getChildren()){
                     UserPushID = child.getKey();
-                    Log.d("Key", UserPushID);
+                    Log.d("DisplayActivity", "Key： " + UserPushID);
                 }
             }
 
@@ -118,14 +121,22 @@ public class DisplayActivity extends YouTubeBaseActivity implements YouTubePlaye
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("DisplayActivity", "Start Button Pressed");
+
                 BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
                 if (mBluetoothAdapter == null) {
+                    Log.d("DisplayActivity", "Bluetooth Not Supported");
+
                     // Device does not support Bluetooth
                     Toast.makeText(DisplayActivity.this, "Bluetooth not supported on this device!", Toast.LENGTH_LONG).show();
                 } else if (!mBluetoothAdapter.isEnabled()) {
+                    Log.d("DisplayActivity", "Bluetooth Not Enabled");
+
                     // Bluetooth is not enabled :)
                     Toast.makeText(DisplayActivity.this, "Bluetooth not enabled on this device!", Toast.LENGTH_LONG).show();
                 } else {
+                    Log.d("DisplayActivity", "Bluetooth Is Enabled");
+
                     // Bluetooth is enabled
                     Toast.makeText(DisplayActivity.this, "Bluetooth is enabled on this device!", Toast.LENGTH_LONG).show();
                     // Hide Start Button
@@ -140,6 +151,8 @@ public class DisplayActivity extends YouTubeBaseActivity implements YouTubePlaye
         buttonStop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("DisplayActivity", "Stop Button Pressed");
+
                 // Hide Stop Button
                 buttonStop.setVisibility(View.GONE);
                 // Show Start Button
@@ -331,7 +344,6 @@ public class DisplayActivity extends YouTubeBaseActivity implements YouTubePlaye
                         // removes the dialog from the screen
                     }
                 })
-
                 .show();
 
     }
