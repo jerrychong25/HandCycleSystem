@@ -6,6 +6,8 @@ import androidx.core.content.ContextCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
+
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,6 +40,9 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Log.d("LoginActivity", "Login Screen Start");
+
         setContentView(R.layout.activity_login);
 
         final EditText EmailText = (EditText) findViewById(R.id.EmailField);
@@ -58,9 +63,13 @@ public class LoginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
+                    Log.d("LoginActivity", "User Signed In");
+
                     // User is signed in
 //                    Toast.makeText(LoginActivity.this, "User have signed in", Toast.LENGTH_LONG).show();
                 } else {
+                    Log.d("LoginActivity", "User Signed Out");
+
                     // User is signed out
 //                    Toast.makeText(LoginActivity.this, "User have signed out", Toast.LENGTH_LONG).show();
                 }
@@ -74,38 +83,44 @@ public class LoginActivity extends AppCompatActivity {
                 String Password = PasswordText.getText().toString();
 
                 if (TextUtils.isEmpty(Email)) {
+                    Log.d("LoginActivity", "No Email Entered");
+
                     EmailText.setError("Please enter your email");
                     Toast.makeText(LoginActivity.this, "Please enter your email", Toast.LENGTH_LONG).show();
                     return;
                 }
                 else if (TextUtils.isEmpty(Password)) {
+                    Log.d("LoginActivity", "No Password Entered");
+
                     PasswordText.setError("Please enter your password");
                     Toast.makeText(LoginActivity.this, "Please enter your password", Toast.LENGTH_LONG).show();
                     return;
                 }
                 else {
+                    Log.d("LoginActivity", "Email and Password Are Entered");
+
                     mAuth.signInWithEmailAndPassword(Email, Password)
                             .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-//                                    Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
-
                                     // If sign in fails, display a message to the user. If sign in succeeds
                                     // the auth state listener will be notified and logic to handle the
                                     // signed in user can be handled in the listener.
                                     if(task.isSuccessful()){
-                                        //display some message here
-                                        Toast.makeText(LoginActivity.this, "LoginActivity success", Toast.LENGTH_LONG).show();
+                                        Log.d("LoginActivity", "Login Success!");
+                                        Toast.makeText(LoginActivity.this, "Login success", Toast.LENGTH_LONG).show();
 
                                         EmailText.getText().clear();
                                         PasswordText.getText().clear();
 
                                         Intent displayIntent = new Intent(LoginActivity.this, DisplayActivity.class);
                                         startActivity(displayIntent);
+
+                                        Log.d("LoginActivity", "Login Screen End");
                                     }
                                     else{
-//                                       Log.w(TAG, "signInWithEmail:failed", task.getException());
-                                        Toast.makeText(LoginActivity.this, "LoginActivity failed", Toast.LENGTH_LONG).show();
+                                        Log.d("LoginActivity", "Login Failed!");
+                                        Toast.makeText(LoginActivity.this, "Login failed", Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });
