@@ -1,6 +1,5 @@
 package com.handcycle;
 
-// Import Android API
 import android.content.Intent;
 import android.os.Build;
 import androidx.core.content.ContextCompat;
@@ -16,19 +15,19 @@ import android.text.TextUtils;
 //import com.android.volley.Response;
 //import com.android.volley.toolbox.Volley;
 
-// Import Firebase API
+// Import Firebase Libraries
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 
-// Import Firebase API 2
+// Import Firebase Libraries 2
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
-public class Login extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
-    private static final String TAG = "Login";
+    private static final String TAG = "LoginActivity";
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -60,10 +59,10 @@ public class Login extends AppCompatActivity {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
                     // User is signed in
-//                    Toast.makeText(Login.this, "User have signed in", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(LoginActivity.this, "User have signed in", Toast.LENGTH_LONG).show();
                 } else {
                     // User is signed out
-//                    Toast.makeText(Login.this, "User have signed out", Toast.LENGTH_LONG).show();
+//                    Toast.makeText(LoginActivity.this, "User have signed out", Toast.LENGTH_LONG).show();
                 }
             }
         };
@@ -76,17 +75,17 @@ public class Login extends AppCompatActivity {
 
                 if (TextUtils.isEmpty(Email)) {
                     EmailText.setError("Please enter your email");
-                    Toast.makeText(Login.this, "Please enter your email", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "Please enter your email", Toast.LENGTH_LONG).show();
                     return;
                 }
                 else if (TextUtils.isEmpty(Password)) {
                     PasswordText.setError("Please enter your password");
-                    Toast.makeText(Login.this, "Please enter your password", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "Please enter your password", Toast.LENGTH_LONG).show();
                     return;
                 }
                 else {
                     mAuth.signInWithEmailAndPassword(Email, Password)
-                            .addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
+                            .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
 //                                    Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
@@ -96,17 +95,17 @@ public class Login extends AppCompatActivity {
                                     // signed in user can be handled in the listener.
                                     if(task.isSuccessful()){
                                         //display some message here
-                                        Toast.makeText(Login.this, "Login success", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(LoginActivity.this, "LoginActivity success", Toast.LENGTH_LONG).show();
 
                                         EmailText.getText().clear();
                                         PasswordText.getText().clear();
 
-                                        Intent displayIntent = new Intent(Login.this, Display.class);
+                                        Intent displayIntent = new Intent(LoginActivity.this, DisplayActivity.class);
                                         startActivity(displayIntent);
                                     }
                                     else{
 //                                       Log.w(TAG, "signInWithEmail:failed", task.getException());
-                                        Toast.makeText(Login.this, "Login failed", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(LoginActivity.this, "LoginActivity failed", Toast.LENGTH_LONG).show();
                                     }
                                 }
                             });

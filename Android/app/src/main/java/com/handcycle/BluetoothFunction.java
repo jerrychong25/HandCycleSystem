@@ -200,7 +200,7 @@ public class BluetoothFunction extends Activity {
                     // Read from the InputStream
                     bytes = mmInStream.read(buffer);		// Get number of bytes and message in "buffer"
                     // Send the obtained bytes to the UI activity
-                    Display.h.obtainMessage(RECEIVE_MESSAGE, bytes, -1, buffer).sendToTarget();		// Send to message queue Handler
+                    DisplayActivity.h.obtainMessage(RECEIVE_MESSAGE, bytes, -1, buffer).sendToTarget();		// Send to message queue Handler
                 } catch (IOException e) {
                     break;
                 }
