@@ -1,0 +1,44 @@
+{
+    "AboutSession":[
+        {
+            "LinkName":"IEEE",
+            "Link":"https://www.ieee.org/"
+        },
+        {
+            "LinkName":"EPICS in IEEE",
+            "Link":"https://epics.ieee.org/"
+        },
+        {
+            "LinkName":"IEEE MySIGHT4Rehab",
+            "Link":"/"
+        },
+        {
+            "LinkName":"IEEE-EMBS Malaysia Chapter",
+            "Link":"https://www.embs.my/"
+        }
+    ],
+    "ChapterResourcesSession":[
+        {
+            "LinkName" : "Become a Sponsor",
+            "Link" : "mailto:gdgjalandhar@gmail.com"
+        },
+        {
+            "LinkName" : "Call for Speaker",
+            "Link" : "mailto:gdgjalandhar@gmail.com"
+        },
+        {
+            "LinkName" : "Media Kit",
+            "Link" : "https://drive.google.com/drive/folders/16rHDaHbuS_YApMWgJHUxygpd-A5gCkLK"
+        }
+    ],
+    "FooterEndSession":[
+        {
+            "LinkName" : "Code of Conduct",
+            "Link" : "https://docs.google.com/document/d/1Wz_w6Z7usMnXKFMpOY4IPbA35twK7Uc4CAxScGDiwOk/edit"
+        },
+        {
+            "LinkName" : "Terms & Servies",
+            "Link" : "https://docs.google.com/document/d/14g3fv9NItiB8Hd-YGYyVYd2N4LRxe6Bx3syWse_wsiA/edit?usp=sharing"
+        }
+    ]
+}
