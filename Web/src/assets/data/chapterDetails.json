@@ -1,0 +1,22 @@
+{
+    "ChapterName":"IEEE MySIGHT4Rehab",
+    "ChapterShortDescription": "IEEE MySIGHT4Rehab is an initiative to build Low-Cost Upper Extremities Rehabilitation System with Interactive Feedback for Children with Movement Disorders.",
+    "ChapterLongDescription":"The project is backed by the IEEE-EMBS Malaysia Chapter, IEEE Engineering Projects in Community Service (EPICS in IEEE), and most importantly volunteers from both IEEE communities alongside with volunteers with same interest.",
+    "ChapterGoogleSitesLink":"https://sites.google.com/site/mysight4rehabepics/",
+    "ChapterEmail":"chongyz@utar.edu.my",
+    "website":"https://gdgjalandhar.com",
+    "ChapterHashTags":["MySIGHT4Rehab","IEEE"],
+    "socialLinks":[
+        {
+            "name" : "Facebook",
+            "link" : "https://www.facebook.com/groups/epicshigh/",
+            "icon" : "fab fa-facebook"
+        },
+        {
+            "name" : "Google Sites",
+            "link" : "https://sites.google.com/site/mysight4rehabepics/",
+            "icon" : "fab fa-google-plus"
+        }
+    ],
+    "aboutGDGProgram":"GDGs are local groups of developers who are specifically interested in Google products and APIs. Each local group is called a GDG chapter and can host a variety of technical activities for developers - from just a few people getting together to watch our latest videos, to large gatherings with demos and tech talks, to hackathons."
+}
