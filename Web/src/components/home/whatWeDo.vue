@@ -3,7 +3,7 @@
         <v-layout wrap align-center justify-center row fill-height >
            <v-flex xs12 md3 lg3 class="pa-2">
                <p class="google-font" style="font-size:180%">What we do?</p>
-               <p class="google-font" style="font-size:110%">To develop a cost-effective, and integrated rehabilitation system which includes interactive element, and other intelligent features.</p>
+               <p class="google-font" style="font-size:110%">To develop a cost-effective, and integrated rehabilitation system that includes interactive and intelligent features.</p>
 
                <p class="google-font" style="font-size:110%">Technology stacks</p>
 
