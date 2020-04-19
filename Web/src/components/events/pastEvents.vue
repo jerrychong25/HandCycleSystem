@@ -20,9 +20,8 @@
                <p class="google-font mb-0" style="font-size:170%;color:#0277bd">Directory of past events</p>
                <p class="google-font mt-0 mb-0" style="font-size:110%;color:#616161 ">
                    Events are listed in reverse chronological order by date.
-               </p>     
-               <p class="google-font" style="font-size:110%;color:#616161 ">To know more about the past meetups <a :href="chapterDetails.ChapterGoogleSitesLink" target="_blank" style="text-decoration:none;color:#0277bd">by clicking here</a>.</p>
-
+               </p>
+               <br/>
             </v-flex> 
         </v-layout>
 

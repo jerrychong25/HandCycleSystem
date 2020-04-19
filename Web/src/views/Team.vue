@@ -5,10 +5,9 @@
       <v-layout wrap align-center justify-center row fill-height class="my-0">
         <v-flex xs12 md10 class="my-0">
             <p class="google-font mb-0" style="font-size:200%;color:#616161">Our lineup of big thinkers and even bigger doers</p>
-            <p class="google-font mt-0 mb-0" style="font-size:110%">Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about. </p>
+            <p class="google-font mt-0 mb-0" style="font-size:110%">The team worked together through weekly meetings, project discussions, technical visits to the NGOs, and various training workshops to design the mechanical properties and structure of the hand-cycle as a collective group. It is anticipated that three more prototypes will be developed by the project team and commissioned to the NGOs by December of 2016.</p>
 
-            <p class="google-font mt-3 mb-0" style="font-size:110%">Our goal is to organize space to connect the best industry experts with Indian audience to boost development of IT. And Our Core Team is: </p>
-
+            <p class="google-font mt-3 mb-0" style="font-size:110%">Our goal is to aid physically challenged children with movement difficulties (e.g. Cerebral Palsy, Spasticity) in Malaysia, inculcate leadership development amongst volunteers especially engineering students generally, and biomedical engineering students specifically, and also volunteers with same interest.</p>
         </v-flex>
       </v-layout>
     </v-container>
@@ -24,7 +23,7 @@
     <v-container fluid >
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class="">
-          <organizingTeam/>
+          <technicalTeam/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -39,11 +38,11 @@
 <script>
 import TeamDetails from '@/assets/data/chapterDetails.json'
 import coreTeam from '@/components/team/coreTeam'
-import organizingTeam from '@/components/team/organizingTeam'
+import technicalTeam from '@/components/team/technicalTeam'
   export default {
     components: {
       coreTeam,
-      organizingTeam
+      technicalTeam
     },
     data() {
       return {
