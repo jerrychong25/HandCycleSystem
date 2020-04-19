@@ -13,7 +13,7 @@
     <v-container fluid class="">
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class="">
-          <aboutGDGChapter/>
+          <aboutIEEEMySIGHT4RehabChapter/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -40,12 +40,12 @@
 
 <script>
 import ChapterDetails from '@/assets/data/chapterDetails.json'
-import aboutGDGChapter from '@/components/about/aboutGDGChapter'
+import aboutIEEEMySIGHT4RehabChapter from '@/components/about/aboutIEEEMySIGHT4RehabChapter'
 import contactInfo from '@/components/about/contactInfo'
 import coc from '@/components/about/coc'
   export default {
     components: {
-      aboutGDGChapter,
+      aboutIEEEMySIGHT4RehabChapter,
       contactInfo,
       coc
     },

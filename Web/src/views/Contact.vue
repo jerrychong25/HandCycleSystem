@@ -42,13 +42,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-
-    
-
-
-
-  </v-content>
-  
+  </v-content>  
 </template>
 
 <script>
