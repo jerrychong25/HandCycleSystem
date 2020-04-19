@@ -18,5 +18,10 @@
         "name":"IEEE EMBS Malaysia Chapter",
         "link":"https://www.embs.my/",
         "img":"myembs.png"
+    },
+    {
+        "name":"Universiti Tunku Abdul Rahman (UTAR)",
+        "link":"https://www.utar.edu.my/",
+        "img":"utar.png"
     }
 ]
