@@ -10,14 +10,6 @@
       </v-layout>
     </v-container>
 
-    <v-container fluid class="grey lighten-5">
-      <v-layout wrap align-center justify-center row fill-height>
-        <v-flex xs12 md10 class="">
-          <upcommingEvents/>
-        </v-flex>
-      </v-layout>
-    </v-container>
-
     <v-container fluid class="grey lighten-5" >
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class="">

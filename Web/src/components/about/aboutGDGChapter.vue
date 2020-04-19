@@ -22,11 +22,6 @@
                 <p class="google-font" style="font-size:120%;">{{chapterDetails.ChapterLongDescription}}</p>
 
                 <p class="google-font grey--text mt-3" style="font-size:120%">{{chapterDetails.aboutGDGProgram}}</p>
-
-                <v-btn :href="chapterDetails.ChapterGoogleSitesLink" target="_blank" class="ma-0 google-font elevation-1" color="#1a73e8" style="text-transform: capitalize;border-radius:5px;color:white">Become a Member</v-btn> 
-                &nbsp;
-
-                <v-btn href="https://developers.google.com/groups" target="_blank" outline color="cyan" style="text-transform: capitalize;border-radius:5px"  class="ml-0" dark>Learn More</v-btn>
             </v-flex> 
            
         </v-layout>
