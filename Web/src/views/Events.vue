@@ -18,7 +18,7 @@
       </v-layout>
     </v-container>
 
-    <v-container fluid class="" >
+    <v-container fluid class="grey lighten-5" >
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class="">
           <pastEvents/>
@@ -32,11 +32,9 @@
 
 <script>
 import ChapterDetails from '@/assets/data/chapterDetails.json'
-import upcommingEvents from '@/components/events/upcomingEvents'
 import pastEvents from '@/components/events/pastEvents'
   export default {
     components: {
-      upcommingEvents,
       pastEvents
     },
     data() {
