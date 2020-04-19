@@ -20,7 +20,7 @@
     <v-container fluid style="background-color:#4C4A78" >
       <v-layout wrap align-center justify-center row fill-height>
         <v-flex xs12 md10 class="">
-          <AboutGDGChapter />
+          <aboutIEEEMySIGHT4RehabChapter />
         </v-flex>
       </v-layout>
     </v-container>
@@ -47,7 +47,7 @@
 <script>
   import HomeStartScreen from '@/components/home/HomeStartScreen'
   import whatWeDo from '@/components/home/whatWeDo'
-  import AboutGDGChapter from '@/components/home/AboutGDGChapter'
+  import aboutIEEEMySIGHT4RehabChapter from '@/components/home/aboutIEEEMySIGHT4RehabChapter'
   import eventshowcase from '@/components/home/eventshowcase'
   import partners from '@/components/home/partners'
   
@@ -55,7 +55,7 @@
     components: {
       HomeStartScreen,
       whatWeDo,
-      AboutGDGChapter,
+      aboutIEEEMySIGHT4RehabChapter,
       eventshowcase,
       partners
     }

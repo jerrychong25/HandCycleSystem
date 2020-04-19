@@ -3,8 +3,8 @@
         <v-layout wrap align-start justify-start row fill-height class="my-0" >
             <v-flex xs12 sm5 md4 lg4 class="pa-2">
                 <v-img
-                    :src="require('@/assets/img/gdg.png')"
-                    :lazy-src="require('@/assets/img/gdg.png')"
+                    :src="require('@/assets/img/handcycle.png')"
+                    :lazy-src="require('@/assets/img/handcycle.png')"
                     class=""
                     width="100%">
                     <v-layout
@@ -21,7 +21,7 @@
             <v-flex xs12 sm7 md8 lg8 class="pa-2 my-0">
                 <p class="google-font" style="font-size:120%;">{{chapterDetails.ChapterLongDescription}}</p>
 
-                <p class="google-font grey--text mt-3" style="font-size:120%">{{chapterDetails.aboutGDGProgram}}</p>
+                <p class="google-font grey--text mt-3" style="font-size:120%">{{chapterDetails.aboutIEEEMySIGHT4Rehab}}</p>
             </v-flex> 
            
         </v-layout>
