@@ -32,7 +32,7 @@
             </v-flex>
 
             <v-flex xs12 md3 sm4 lg3 class="py-2">
-              <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>Resources</b></p>  
+              <p class="google-font mb-0" style="font-size: 140%;font-weight: 300;"><b>Exteral Links</b></p>  
               <div v-for="(item,i) in FooterData.ChapterResourcesSession" :key="i" class="mt-1">
                 <a :href="item.Link" class="google-font" target="_blank" style="color: #3E4551;text-decoration: none;font-size:110%">{{item.LinkName}}</a><br>
               </div>
