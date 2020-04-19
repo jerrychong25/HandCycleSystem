@@ -1,18 +1,22 @@
 [
     {
-        "name":"GDG",
-        "link":"https://developers.google.com/groups",
-        "img":"gdglogo.png"
+        "name":"IEEE",
+        "link":"https://www.ieee.org/",
+        "img":"ieee.png"
     },
     {
-        "name":"WomenTechmakers",
-        "link":"https://www.womentechmakers.com/",
-        "img":"wtm.png"
+        "name":"EPICS in IEEE",
+        "link":"https://epics.ieee.org/",
+        "img":"epicsinieee.png"
     },
     {
-        "name":"GDG[x]",
-        "link":"https://github.com/gdg-x",
-        "img":"gdg-x.svg"
+        "name":"IEEE EMBS",
+        "link":"https://www.embs.org/",
+        "img":"ieeeembs.png"
+    },
+    {
+        "name":"IEEE EMBS Malaysia Chapter",
+        "link":"https://www.embs.my/",
+        "img":"myembs.png"
     }
-
 ]

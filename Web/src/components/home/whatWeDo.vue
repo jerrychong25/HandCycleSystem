@@ -25,27 +25,27 @@
                 <v-layout row wrap>
 
                     <v-flex xs6 sm6 md3 lg3 class="text-xs-center pa-2">
-                        <v-icon large style="font-size:300%">chat_bubble</v-icon>
-                        <p class="google-font" style="font-size:130%">Talks</p>
-                        <p class="google-font" style="font-size:110%">Get updated with the latest news and announcements</p>
+                        <v-icon large style="font-size:300%">settings</v-icon>
+                        <p class="google-font" style="font-size:130%">Mechanical</p>
+                        <p class="google-font" style="font-size:110%">Design and build physical structure with safety measure</p>
                     </v-flex>
 
                     <v-flex xs6 sm6 md3 lg3 class="text-xs-center pa-2">
-                        <v-icon large style="font-size:300%">code</v-icon>
-                        <p class="google-font" style="font-size:130%">Codelabs</p>
-                        <p class="google-font" style="font-size:110%">Get hands-on experience and guidance from the community members</p>
+                        <v-icon large style="font-size:300%">memory</v-icon>
+                        <p class="google-font" style="font-size:130%">Electronic</p>
+                        <p class="google-font" style="font-size:110%">Design and build circuit boards and control system</p>
+                    </v-flex>
+
+                    <v-flex xs6 sm6 md3 lg3 class="text-xs-center pa-2">
+                        <v-icon large style="font-size:300%">desktop_windows</v-icon>
+                        <p class="google-font" style="font-size:130%">Software</p>
+                        <p class="google-font" style="font-size:110%">Design and develop mobile and web apps</p>
                     </v-flex>
 
                     <v-flex xs6 sm6 md3 lg3 class="text-xs-center pa-2">
                         <v-icon large style="font-size:300%">school</v-icon>
-                        <p class="google-font" style="font-size:130%">Campus Roadshows</p>
-                        <p class="google-font" style="font-size:110%">Share knowledge in different Companies, colleges and universities</p>
-                    </v-flex>
-
-                    <v-flex xs6 sm6 md3 lg3 class="text-xs-center pa-2">
-                        <v-icon large style="font-size:300%">airplay</v-icon>
-                        <p class="google-font" style="font-size:130%">Live Viewing Parties</p>
-                        <p class="google-font" style="font-size:110%">Share knowledge in different Companies, colleges and universities</p>
+                        <p class="google-font" style="font-size:130%">Event</p>
+                        <p class="google-font" style="font-size:110%">Share knowledge in different universities and rehabilitation centres</p>
                     </v-flex>
 
                 </v-layout>
