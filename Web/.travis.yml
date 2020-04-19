@@ -1,17 +1,18 @@
 language: node_js
 node_js:
-  - "10.15.2"
+  - 'lts/*'
+before_script:
+  - npm install -g @vue/cli@latest
+  - npm ci
 script:
   - echo "Deploying"
-
-before_script:
-  - npm install -g firebase-tools
-  - npm install -g @vue/cli@latest
-  - npm install
-
-script:
   - npm run build
-
-after_success:  
-  - firebase deploy --token $FKEY
-
+deploy:
+  provider: pages
+  skip_cleanup: true
+  keep_history: true
+  github_token: $github_token  # Set in the settings page of your repository, as a secure variable
+  local_dir: build
+  target_branch: master
+  on:
+    branch: staging
