@@ -6,7 +6,7 @@ This is a rehabilitation system designed for project name "[Development of low c
 
 ## Deployment
 
-Tested on Android 4.4-9.0 tablets and Arduino board.<br>
+Tested on Android tablets and Arduino Uno board.<br>
 
 A prototype is built for demonstration purpose, as per screenshot below:<br>
 Picture is temporarily not available

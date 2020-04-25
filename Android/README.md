@@ -23,7 +23,7 @@ This is a mobile app developed for project name "[Development of low cost upper 
 
 ## Deployment
 
-Tested on Android 4.X tablet.
+Tested on Android tablet.
 
 ## Built With
 

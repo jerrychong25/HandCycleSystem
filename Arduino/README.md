@@ -6,7 +6,7 @@ This is a Arduino code for project name "[Development of low cost upper and lowe
 
 ## Deployment
 
-Tested on Arduino board.
+Tested on Arduino Uno board.
 
 ## Built With
 
