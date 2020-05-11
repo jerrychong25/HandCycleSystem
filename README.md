@@ -2,7 +2,7 @@
 
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](https://ieeemysight4rehab.github.io/)
 [![GitHub release](https://img.shields.io/github/release/jerrychong25/HandCycleSystem.svg)](https://gitHub.com/jerrychong25/HandCycleSystem/releases/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jerrychong25/HandCycleSystem/graphs/commit-activity)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/jerrychong25/HandCycleSystem/graphs/commit-activity)
 [![w3c](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fieeemysight4rehab.github.io%2F)](https://ieeemysight4rehab.github.io/)
 [![HitCount](http://hits.dwyl.com/jerrychong25/HandCycleSystem.svg)](http://hits.dwyl.com/jerrychong25/HandCycleSystem)
 
