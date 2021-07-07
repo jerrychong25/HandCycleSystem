@@ -4,7 +4,7 @@
 [![GitHub release](https://img.shields.io/github/release/jerrychong25/HandCycleSystem.svg)](https://gitHub.com/jerrychong25/HandCycleSystem/releases/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://github.com/jerrychong25/HandCycleSystem/graphs/commit-activity)
 [![w3c](https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fieeemysight4rehab.github.io%2F)](https://ieeemysight4rehab.github.io/)
-[![HitCount](http://hits.dwyl.com/jerrychong25/HandCycleSystem.svg)](http://hits.dwyl.com/jerrychong25/HandCycleSystem)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fjerrychong25%2Fhand-cycle-system&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ## Getting Started
 
